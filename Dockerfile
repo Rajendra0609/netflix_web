@@ -15,7 +15,8 @@ ENV TZ=IST
 ENV JAVA_OPTS="-Xms512m -Xmx1024m"
 
 # Copy your WAR file into the webapps directory of Tomcat
-COPY /var/lib/jenkins/workspace/netflix/target/my-web-app.war /usr/local/tomcat/webapps/ROOT.war
+COPY /var/lib/jenkins/workspace/netflix/target/my-web-app-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+
 
 # Expose the default Tomcat port
 EXPOSE 8081
